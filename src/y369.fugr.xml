@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function Group for ACAT</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LY369F01</SOBJ_NAME>
+    <SOBJ_NAME>LY369F02</SOBJ_NAME>
+    <SOBJ_NAME>LY369TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLY369</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Y_BDC_01</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Batch Usage</SHORT_TEXT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>I_OBJECTS</PARAMETER>
+       <DBSTRUCT>YINP1</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>O_RESULTS</PARAMETER>
+       <DBSTRUCT>YOUT2</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>BDC_ID</PARAMETER>
+       <DBSTRUCT>Y369RET</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_OBJECTS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Output Input Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>O_RESULTS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Batch Usage Analysis output structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>BDC_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Function call return flag</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Y_CLO_01</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Clone Candidate</SHORT_TEXT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>I_OBJECTS</PARAMETER>
+       <DBSTRUCT>YINP1</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>O_RESULTS</PARAMETER>
+       <DBSTRUCT>YOUT1</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>CLONE_ID</PARAMETER>
+       <DBSTRUCT>Y369RET</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_OBJECTS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Output Input Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>O_RESULTS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>BDC analysis output structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CLONE_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Function call return flag</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Y_OBJ_01</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Object Classification</SHORT_TEXT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>I_OBJECTS</PARAMETER>
+       <DBSTRUCT>YINP1</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>O_RESULTS</PARAMETER>
+       <DBSTRUCT>YCOMPLEX</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_OBJECTS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Output Input Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>O_RESULTS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>complexity detemination</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Y_SCR_01</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Screen Defination</SHORT_TEXT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>I_TCODES</PARAMETER>
+       <DBSTRUCT>YTCODES</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>O_SCREENS</PARAMETER>
+       <DBSTRUCT>YSCREENS</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_TCODES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>List of Transaction codes</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>O_SCREENS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Screen defintion for Transaction codes</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Y_WU_01</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Where Used</SHORT_TEXT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>I_OBJECTS</PARAMETER>
+       <DBSTRUCT>YINP1</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>O_RESULTS</PARAMETER>
+       <DBSTRUCT>YOUT1</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>WU_ID</PARAMETER>
+       <DBSTRUCT>Y369RET</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_OBJECTS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Output Input Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>O_RESULTS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>BDC analysis output structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WU_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Function call return flag</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
